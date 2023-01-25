@@ -58,6 +58,7 @@ const  emailValidation= () => {
     
     if  (email.value.trim() === '' ) {
         email.parentElement.setAttribute('data-error-visible', 'true');
+        setErrorMessage(email, true);
         email.parentElement.setAttribute("data-error", "Veuillez entrer votre email");
         return false;
     }
